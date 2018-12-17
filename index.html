@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MA 8:1</title>
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round|Gravitas+One|Asset|Baloo+Bhai|Baloo+Tamma|Chicle|Diplomata|Fascinate|Fjalla+One|Six+Caps|Smythe|Snippet|Sonsie+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style_grid.css">
+	<meta charset="utf-8">
+	<style type="text/css">
+	*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			background: #decfb9;
+		}
+		main, footer{
+			width: 90%;
+			margin: auto;
+		}
+		.container{
+			width: 90%;
+		}
+		section{
+			border-width: 4px 4px 4px 4px;
+			border-color: black;
+			border-style: solid;
+			overflow: hidden;
+		}
+		h1{
+			margin: 0px 0 0 0;
+			text-align: left;
+			text-align: bottom;
+			font-size: 2.8em;
+		}
+		h2{
+			padding: 0 0 3px 3px;
+			text-align: right;
+			font-size: 0.9em;
+		}
+		.caixa, section{
+			position: absolute;
+		}
+		#c1{
+			top: 64px;
+			left: 0;
+			height: 100px;
+			width: 436px;
+			font-family: 'Gravitas One', cursive;
+			padding: 5px;
+			z-index: 8;
+		}
+		#c2{
+			top: 160px;
+			left: 0;
+			height: 104px;
+			width: 436px;
+			font-family: 'Fjalla One', sans-serif;
+			font-size: 1.1em;
+			line-height: 55px;
+			padding: 5px;
+			z-index: 7;
+		}
+		#c3{
+			top: 64px;
+			left: 432px;
+			height: 240px;
+			width: 220px;
+			font-family: 'Baloo Bhai', cursive;
+			font-size: 1.5em;
+			padding: 5px;
+			z-index: 9;
+		}
+		#c4{
+			top: 64px;
+			left: 648px;
+			height: 110px;
+			width: 226px;
+			font-family: 'Chicle', cursive;
+			padding: 5px;
+			z-index: 10;
+		}
+		#c5{
+			top: 64px;
+			left: 870px;
+			height: 110px;
+			width: 210px;
+			font-family: 'Gravitas One', cursive;
+			padding: 5px;
+			z-index: 9;
+		}
+		#g1{
+			position: absolute;
+			top: 7px;
+			transform: rotate(-90deg);
+			text-align: bottom;
+
+
+		}
+		#g1:hover{
+			position: absolute;
+			transform: rotate(0deg);
+			transition: bottom 2s ease-out;
+
+		}
+		#c6{
+			top: 170px;
+			left: 648px;
+			height: 274px;
+			width: 432px;
+			font-family: 'Varela Round', sans-serif;
+			padding: 5px;
+			z-index: 8;
+		}
+		#c7{
+			top: 260px;
+			left: 0px;
+			height: 244px;
+			width: 330px;
+			font-family: 'Sonsie One', cursive;
+			padding: 5px;
+			z-index: 5;
+		}
+		#g2{
+			transform: rotate(-90deg);
+			text-align: center;
+		}
+		#c8{
+			top: 260px;
+			left: 326px;
+			height: 244px;
+			width: 266px;
+			font-family: 'Varela Round', sans-serif;
+			padding: 5px;
+			z-index: 5;
+		}
+		#g3{
+			transform: rotate(-90deg);
+			text-align: bottom;
+		}
+		#c11{
+			top: 238px;
+			left: 588px;
+			height: 416px;
+			width: 346px;
+			font-family: 'Varela Round', sans-serif;
+			padding: 5px;
+			z-index: 5;
+		}
+		#c9{
+			top: 500px;
+			left: 0px;
+			height: 244px;
+			width: 266px;
+			font-family: 'Six Caps', sans-serif;
+			font-size: 2em;
+			padding: 5px;
+			z-index: 5;
+		}
+		#c10{
+			top: 500px;
+			left: 262px;
+			height: 244px;
+			width: 330px;
+			font-family: 'Baloo Bhai', cursive;
+			padding: 5px;
+			z-index: 5;
+		}
+		#c12{
+			top: 440px;
+			left: 930px;
+			height: 214px;
+			width: 150px;
+			font-family: 'Varela Round', sans-serif;
+			padding: 5px;
+			z-index: 6;
+		}
+		#g4{
+			transform: rotate(-90deg);
+			text-align: center;
+		}
+		#c13{
+			padding: 5px;
+			top: 650px;
+			left: 588px;
+			height: 94px;
+			width: 492px;
+			font-family: 'Asset', cursive;
+			z-index: 5;
+		}
+		#f0{
+			width: 90%;
+			margin: auto;
+			top: 0;	
+		}
+		#f1{
+			top: 744px;
+			left: 0px;
+			height: 128px;
+			width: 186px;
+			border-width: 6px 0 0px 0;
+			border-color: black;
+			border-style: solid;
+			font-family: 'Varela Round', sans-serif;
+			font-size: 35px;
+			color: brown;
+			z-index: 10;
+		}
+		#f2{
+			top: 744px;
+			left: 186px;
+			height: 128px;
+			width: 894px;
+			border-width: 6px 0 0px 0;
+			border-color: black;
+			border-style: solid;
+			font-family: 'Gravitas One', cursive;
+			z-index: 10;
+		}
+		#f3{
+			top: 875px;
+			left: 0px;
+			width: 1080px;
+			text-align: center;
+			z-index: 10;
+			border-width: 12px 0 0px 0;
+			border-color: black;
+			border-style: solid;
+			background: orange;
+			font-family: 'Gravitas One', cursive;
+			z-index: 10;
+		}
+		@media only screen and (max-width: 600px){
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			background: #decfb9;
+		}		
+		main, footer{
+			width: 100%;
+			margin: auto;
+		}
+		section{
+			border-width: 2px 2px 2px 2px;
+			border-color: black;
+			border-style: solid;
+			overflow: hidden;
+		}
+		h1{
+			text-align: left;
+			text-align: bottom;
+			font-size: 1.8em;
+		}
+		h2{
+			text-align: right;
+			font-size: 0.8em;
+		}
+		.caixa, section{
+			position: absolute;
+		}
+		#c1{
+			top: 0px;
+			height: 60px;
+			width: 402px;
+			font-family: 'Gravitas One', cursive;
+			padding: 5px;
+			z-index: 8;
+		}
+		#c2{
+			top: 58px;
+			left: 0;
+			height: 60px;
+			width: 402px;
+			font-family: 'Fjalla One', sans-serif;
+			font-size: 1em;
+			line-height: -20px;
+			padding: 5px;
+			z-index: 7;
+		}
+		#c3{
+			top: 0px;
+			left: 400px;
+			height: 130px;
+			width: 200px;
+			font-family: 'Baloo Bhai', cursive;
+			font-size: 1.5em;
+			padding: 5px;
+			z-index: 9;
+		}
+		#c4{
+			top: 116px;
+			left: 0px;
+			height: 110px;
+			width: 302px;
+			font-family: 'Chicle', cursive;
+			padding: 5px;
+			z-index: 7;
+		}
+		#c5{
+			top: 116px;
+			left: 298px;
+			height: 110px;
+			width: 302px;
+			font-family: 'Gravitas One', cursive;
+			font-size: 0.9em;
+			text-align: center;
+			padding: 5px;
+			z-index: 8;
+		}
+		#g1{
+			position: absolute;
+			top: 7px;
+			transform: rotate(-90deg);
+			text-align: bottom;
+		}
+		#g1:hover{
+			position: absolute;
+			transform: rotate(0deg);
+			transition: bottom 2s ease-out;
+		}
+		#c6{
+			top: 224px;
+			left: 0px;
+			height: 60px;
+			width: 600px;
+			font-family: 'Varela Round', sans-serif;
+			padding: 5px;
+			z-index: 6;
+		}
+		#c7{
+			top: 282px;
+			left: 0px;
+			height: 244px;
+			width: 152px;
+			font-family: 'Sonsie One', cursive;
+			text-align: left;
+			padding: 5px;
+			z-index: 3;
+		}
+		#g2{
+			transform: rotate(-90deg);
+			text-align: center;
+		}
+		#c8{
+			top: 282px;
+			left: 150px;
+			height: 244px;
+			width: 152px;
+			font-family: 'Varela Round', sans-serif;
+			text-align: center;
+			padding: 5px;
+			z-index: 4;
+		}
+		#g3{
+			transform: rotate(-90deg);
+			text-align: center;
+		}
+		#c9{
+			top: 282px;
+			left: 300px;
+			height: 244px;
+			width: 152px;
+			font-family: 'Six Caps', sans-serif;
+			text-align: center;
+			font-size: 2em;
+			padding: 5px;
+			z-index: 5;
+		}
+		#c10{
+			top: 282px;
+			left: 450px;
+			height: 244px;
+			width: 150px;
+			font-family: 'Baloo Bhai', cursive;
+			text-align: center;
+			padding: 5px;
+			z-index: 6;
+		}
+		#c11{
+			top: 524px;
+			left: 0px;
+			height: 90px;
+			width: 392px;
+			font-family: 'Varela Round', sans-serif;
+			padding: 5px;
+			z-index: 5;
+		}
+		#c12{
+			top: 524px;
+			left: 390px;
+			height: 180px;
+			width: 210px;
+			font-family: 'Varela Round', sans-serif;
+			padding: 5px;
+			z-index: 6;
+		}
+		#c13{
+			top: 612px;
+			left: 0px;
+			height: 92px;
+			width: 392px;
+			font-family: 'Asset', cursive;
+			padding: 5px;
+			z-index: 4;
+		}
+		#f1{
+			top: 704px;
+			left: 0px;
+			height: 48px;
+			width: 600px;
+			border-width: 6px 0 0px 0;
+			border-color: black;
+			border-style: solid;
+			font-family: 'Varela Round', sans-serif;
+			text-align: center;
+			font-size: 20px;
+			color: brown;
+			z-index: 10;
+		}
+		#f2{
+			top: 746px;
+			left: 0px;
+			height: px;
+			width: 600px;
+			border-width: 0px 0 0px 0;
+			border-color: black;
+			border-style: solid;
+			font-family: 'Gravitas One', cursive;
+			font-size: 0.74em;
+			z-index: 10;
+		}
+		#f3{
+			top: 852px;
+			left: 30px;
+			width: 600px;
+			text-align: center;
+			z-index: 10;
+			border-width: 8px 0 0px 0;
+			border-color: black;
+			border-style: solid;
+			font-family: 'Gravitas One', cursive;
+			z-index: 10;
+		}
+	}
+</style>
+</head>
+<body>
+	<header></header>
+	<main class="container">
+		<!-- 1 -->
+			<div class="caixa">
+				<section id="c1">
+					<h1>De Styl</h1>
+					<h2>Weimar</h2>
+				</section>
+			</div>
+			<div class="caixa">
+				<section id="c2">
+					<h1>DER STRUM</h1>
+					<h2>Berlin</h2>
+				</section>
+			</div>
+			<div class="caixa">
+				<section id="c3">
+					<h1>2x2</h1>
+					<h2>Wien</h2>
+				</section>
+			</div>
+			<div class="caixa">
+				<section id="c4">
+					<h1>Ça Ira</h1>
+					<h2>Brüxelles</h2>
+				</section>
+			</div>
+			<div class="caixa">
+				<section id="c5">
+					<div id="g1">
+						<h1>UT</h1>
+						<h2>Novlsad</h2>
+					</div>
+				</section>
+			</div>
+			<div class="caixa">
+				<section id="c6">
+					<h1>L'ESPRIT NOUVEAU</h1>
+					<h2>Paris</h2>
+				</section>
+			</div>
+		<!-- 2 -->
+			<div class="caixa">
+				<section id="c7">
+					<div id="g2">
+						<h1>BROOM</h1>
+						<h2>Berlin</h2>
+					</div>
+				</section>
+			</div>
+			<div class="caixa">
+				<section id="c8">
+					<div id="g3">
+						<h1>MECANO</h1>
+						<h2>Weimar</h2>
+					</div>
+				</section>
+			</div>
+			<div class="caixa">
+				<section id="c9">
+					<h1>DER GEGNER</h1>
+					<h2>Berlin</h2>
+				</section>
+			</div>
+			<div class="caixa">
+				<section id="c10">
+					<h1><b>DIE AKTION</b></h1>
+					<h2>Berlin</h2>
+				</section>
+			</div>
+			<div class="caixa">	
+				<section id="c11">
+					<h1>LA VIE DES LETTRES ET DES ARTS</h1>
+					<h2>Paris</h2>
+				</section>
+			</div>
+			<div class="caixa">	
+				<section id="c12">
+					<div id="g4">
+						<h1>CLARTE</h1>
+						<h2>Paris</h2>
+					</div>
+				</section>
+			</div>	
+			<div class="caixa">	
+				<section id="c13">
+					<h1>ZENIT</h1>
+					<h2>Zagreb</h2>
+				</section>
+			</div>
+			<div class="caixa">
+				<section id="f1">
+					<h1>MA</h1>
+				</section>
+			</div>		
+			<div class="caixa">
+				<section id="f2">
+					<p>internacionális aktivistamüveszeti folyóirat. Szerkeszti: Kassák Lajos. Felelösszerkesztö: Josef Kalmer. Szerkesztöség és kiadóhivatal: Wien, XIII. Bez·Amalienstrasse 26. I. 11. Megjelenés dátuma 1922 október 15. Elöfizetésiár: EGY EVRE: 35.000 osztrák kor., 70 szokol, 100 dinár, 200 lei, 800 márka. EGYES SZÁM ÁRA: 3000 osztrák kor., 7 szokol, 10 dinár, 20 lei, 80 márka. VIII. évfolyam, 1. szám. A lapban megjelenö cikkekért a szerzö felel.</p>
+				</section>
+			</div>	
+	</main>
+	<footer>
+		<div class="caixa">
+			<section id="f3">
+				<p>
+					<a href="https://monoskop.org/Magazines#mediaviewer/File:MA_8_1_15_Oct_1922_back_cover.jpg">DMA 8:1, Vienna, 15 octubre 1922</a>
+				</p>
+			</section>
+		</div>
+		
+	</footer>
+</body>
+</html>
